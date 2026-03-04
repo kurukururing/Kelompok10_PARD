@@ -2,101 +2,109 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Thinkara - Platform Pengembangan Kognitif & Berpikir Kritis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinkara - Platform Pengembangan Kognitif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <strong>Thinkara</strong> | 
-            <a href="about.html">About</a> | 
-            <a href="portfolio.html">Portfolio</a> | 
-            <a href="contact.html">Kontak</a>
-        </nav>
-        <hr>
-        <h1>Mengasah Otak, Bukan Sekadar Mencari Jawaban</h1>
-        <p><em>Platform pembelajaran reflektif untuk membangun kemandirian berpikir di era instan.</em></p>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Thinkara</div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="btn-nav">Kontak</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="tentang">
-            <h2>Mengapa Berpikir Kritis Itu Penting?</h2>
-            <p>Di dunia yang penuh dengan informasi cepat dan jawaban instan dari mesin pencari, kemampuan untuk <strong>menganalisis, mengevaluasi, dan merefleksikan</strong> informasi menjadi semakin langka. Platform ini hadir sebagai respons terhadap ketergantungan siswa pada solusi tanpa proses.</p>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h1>Mengasah Otak, Bukan Sekadar Mencari Jawaban</h1>
+            <p>Platform pembelajaran reflektif untuk membangun kemandirian berpikir di era instan.</p>
+        </div>
+    </section>
 
-        <hr>
+    <main class="container">
+        <section id="tentang" class="card">
+            <h2>Mengapa Berpikir Kritis Itu Penting?</h2>
+            <p>Di dunia yang penuh dengan informasi cepat, kemampuan untuk <strong>menganalisis, mengevaluasi, dan merefleksikan</strong> informasi menjadi semakin langka. Kami hadir sebagai solusi atas ketergantungan pada jawaban instan tanpa proses.</p>
+        </section>
 
         <section id="pilar">
-            <h2>Pilar Utama Pembelajaran Kami</h2>
-            <ul>
-                <li>
-                    <strong>Latihan Terstruktur:</strong> Kurikulum yang dirancang bertahap untuk membangun fondasi logika yang kuat.
-                </li>
-                <li>
-                    <strong>Pendekatan Reflektif:</strong> Siswa tidak hanya menjawab, tetapi menjelaskan "bagaimana" dan "mengapa" mereka sampai pada kesimpulan tersebut.
-                </li>
-                <li>
-                    <strong>Analisis Kognitif:</strong> Mengidentifikasi bias berpikir dan meningkatkan ketajaman analisis dalam memecahkan masalah kompleks.
-                </li>
-            </ul>
+            <h2 class="section-title">Pilar Utama Pembelajaran</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Latihan Terstruktur</h3>
+                    <p>Kurikulum dirancang bertahap untuk membangun fondasi logika yang kuat.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Pendekatan Reflektif</h3>
+                    <p>Menjelaskan "bagaimana" dan "mengapa" di balik setiap kesimpulan.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Analisis Kognitif</h3>
+                    <p>Mengidentifikasi bias berpikir dan meningkatkan ketajaman analisis.</p>
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <section id="kurikulum">
+        <section id="kurikulum" class="card">
             <h2>Metodologi Kami</h2>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Tahapan</th>
-                        <th>Fokus Aktivitas</th>
-                        <th>Tujuan Akhir</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1. Observasi</td>
-                        <td>Membaca data dan fakta secara detail.</td>
-                        <td>Akurasi informasi.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Dekonstruksi</td>
-                        <td>Memecah masalah menjadi bagian kecil.</td>
-                        <td>Pemahaman mendalam.</td>
-                    </tr>
-                    <tr>
-                        <td>3. Refleksi</td>
-                        <td>Mengevaluasi kembali proses berpikir.</td>
-                        <td>Kesadaran metakognitif.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tahapan</th>
+                            <th>Fokus Aktivitas</th>
+                            <th>Tujuan Akhir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Observasi</td>
+                            <td>Membaca data dan fakta secara detail.</td>
+                            <td><span class="badge">Akurasi</span></td>
+                        </tr>
+                        <tr>
+                            <td>2. Dekonstruksi</td>
+                            <td>Memecah masalah menjadi bagian kecil.</td>
+                            <td><span class="badge">Pemahaman</span></td>
+                        </tr>
+                        <tr>
+                            <td>3. Refleksi</td>
+                            <td>Mengevaluasi kembali proses berpikir.</td>
+                            <td><span class="badge">Metakognitif</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <br>
-
-        <section>
-            <fieldset>
-                <legend>Mulai Perjalanan Anda</legend>
-                <p>Siap untuk melatih kemampuan berpikir Anda hari ini?</p>
-                <form>
-                    <label for="nama">Nama Lengkap:</label><br>
-                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
-                    
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="alamat@email.com"><br><br>
-                    
-                    <button type="submit">Daftar Sekarang</button>
-                </form>
-            </fieldset>
+        <section id="join" class="form-section card">
+            <h2>Mulai Perjalanan Anda</h2>
+            <p>Siap untuk melatih kemampuan berpikir Anda hari ini?</p>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="alamat@email.com">
+                </div>
+                <button type="submit" class="btn-submit">Daftar Sekarang</button>
+            </form>
         </section>
     </main>
 
-    <br>
-    <hr>
-
     <footer>
-        <p><strong>&copy; Thinkara.</strong> <em>"Berpikir adalah kerja keras, itulah mengapa sedikit orang yang melakukannya."</em></p>
+        <div class="container">
+            <p>&copy; 2026 <strong>Thinkara.</strong></p>
+            <p><em>"Berpikir adalah kerja keras, itulah mengapa sedikit orang yang melakukannya."</em></p>
+        </div>
     </footer>
 
 </body>

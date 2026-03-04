@@ -7,128 +7,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="portfolio-page">
 
-<body>
-
-    <header>
-        <h1 align="center">Thinkara</h1>
-        <h2 align="center" style="font-weight: 400; color: #666; font-size: 1.2rem;">Website Pembelajaran</h2>
-        <nav align="center">
-            <a href="index.html">Beranda</a> |
-            <a href="about.html">Tentang</a> |
-            <a href="portfolio.html"><b>Portfolio</b></a> |
-            <a href="contact.html">Kontak</a>
-        </nav>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Thinkara</div>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html" class="btn-nav">Kontak</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="main-container">
-        <div class="bio_container">
-            <a href="bioJeff.html" class="dev-card-link">
-                <div class="dev-card">
-                    <div class="dev-icon">A</div>
-                    <div class="dev-info">
-                        <h4>Developer Profile</h4>
-                        <p>Axel</p>
-                    </div>
-                    <div class="arrow-icon">→</div>
+    <main class="container">
+        <section class="portfolio-hero">
+            <h1>Portfolio Kami</h1>
+            <p class="quote">"Thinkara merupakan platform pembelajaran digital yang dirancang untuk meningkatkan kemampuan berpikir kritis dan menulis akademik tanpa ketergantungan pada AI."</p>
+        </section>
+
+        <div class="bio-grid">
+            <a href="bioJeff.html" class="dev-card">
+                <div class="dev-icon">A</div>
+                <div class="dev-info">
+                    <span>Developer Profile</span>
+                    <h4>Axel</h4>
                 </div>
-            </a><a href="bioJeff.html" class="dev-card-link">
-                <div class="dev-card">
-                    <div class="dev-icon">N</div>
-                    <div class="dev-info">
-                        <h4>Developer Profile</h4>
-                        <p>Najwa</p>
-                    </div>
-                    <div class="arrow-icon">→</div>
-                </div>
+                <div class="arrow-icon">→</div>
             </a>
-            <a href="bioJeff.html" class="dev-card-link">
-                <div class="dev-card">
-                    <div class="dev-icon">GJ</div>
-                    <div class="dev-info">
-                        <h4>Developer Profile</h4>
-                        <p>Gregorius Frederick J.</p>
-                    </div>
-                    <div class="arrow-icon">→</div>
+            <a href="bioJeff.html" class="dev-card">
+                <div class="dev-icon icon-purple">N</div>
+                <div class="dev-info">
+                    <span>Developer Profile</span>
+                    <h4>Najwa</h4>
                 </div>
+                <div class="arrow-icon">→</div>
             </a>
+            <a href="bioJeff.html" class="dev-card">
+                <div class="dev-icon icon-indigo">GJ</div>
+                <div class="dev-info">
+                    <span>Developer Profile</span>
+                    <h4>Gregorius Frederick J.</h4>
+                </div>
+                <div class="arrow-icon">→</div>
+            </a>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-item">
+                <h2>100+</h2>
+                <p>Latihan Kosakata</p>
             </div>
+            <div class="stat-item">
+                <h2>50+</h2>
+                <p>Simulasi Laporan</p>
+            </div>
+            <div class="stat-item">
+                <h2>Weekly</h2>
+                <p>Tantangan Baru</p>
+            </div>
+        </div>
 
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+        <section class="features-section">
+            <h3 class="section-title">Fitur Utama</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png" alt="Icon">
+                    <h4>Latihan Kosakata Akademik</h4>
+                    <p>Mempelajari istilah dan konsep akademik secara bertahap untuk memperkuat fondasi bahasa.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2436/2436636.png" alt="Icon">
+                    <h4>Evaluasi Terstruktur</h4>
+                    <p>Latihan berbasis soal untuk mengukur pemahaman secara sistematis dan objektif.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2991/2991108.png" alt="Icon">
+                    <h4>Simulasi Penyusunan Laporan</h4>
+                    <p>Berlatih menyusun paragraf ilmiah sesuai dengan standar kaidah penulisan akademik.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3208/3208743.png" alt="Icon">
+                    <h4>Pelacakan Progres</h4>
+                    <p>Sistem analitik yang memantau perkembangan grafik belajar siswa secara berkala.</p>
+                </div>
+            </div>
+        </section>
 
-        <table border="0" width="100%" cellpadding="10">
-            
-            <tr>
-                <td>
-                    <h3 align="center" style="font-size: 1.8rem; margin-bottom: 10px;">Portfolio Kami</h3>
-                    <p align="center" style="font-size: 1.1rem; color: #444; max-width: 800px; margin: 0 auto;">
-                        <i>"Thinkara merupakan platform pembelajaran digital yang dirancang untuk meningkatkan kemampuan berpikir kritis dan menulis akademik tanpa ketergantungan pada AI."</i>
-                    </p>
-                </td>
-            </tr>
+        <section class="advantages">
+            <h3 class="section-title">Keunggulan Utama</h3>
+            <div class="advantage-pills">
+                <span>Interaktif & Reflektif</span>
+                <span>Terstruktur</span>
+                <span>Berbasis Tantangan</span>
+                <span>Mandiri</span>
+            </div>
+        </section>
+    </main>
 
-            <tr>
-                <td>
-                    <table border="0" width="100%" style="margin: 40px 0; text-align: center;">
-                        <tr class="stat-box">
-                            <td><h2 style="font-size: 2.5rem; color: #6366f1; margin: 0;">100+</h2><p>Latihan Kosakata</p></td>
-                            <td><h2 style="font-size: 2.5rem; color: #6366f1; margin: 0;">50+</h2><p>Simulasi Laporan</p></td>
-                            <td><h2 style="font-size: 2.5rem; color: #6366f1; margin: 0;">Weekly</h2><p>Tantangan Baru</p></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h3 align="center" style="font-size: 1.5rem; margin-bottom: 25px;">Fitur Utama</h3>
-                    <table border="0" width="100%" cellpadding="15" cellspacing="10">
-                        <tr>
-                            <td width="50%" class="feature-card" align="center" valign="top" style="border: 1px solid #eee; border-radius: 15px;">
-                                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png" width="50">
-                                <h4>Latihan Kosakata Akademik</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Mempelajari istilah dan konsep akademik secara bertahap.</p>
-                            </td>
-                            <td width="50%" class="feature-card" align="center" valign="top" style="border: 1px solid #eee; border-radius: 15px;">
-                                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png" width="50">
-                                <h4>Evaluasi Terstruktur</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Latihan berbasis soal untuk mengukur pemahaman secara sistematis.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="50%" class="feature-card" align="center" valign="top" style="border: 1px solid #eee; border-radius: 15px;">
-                                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png" width="50">
-                                <h4>Simulasi Penyusunan Laporan</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Berlatih menyusun paragraf ilmiah sesuai kaidah penulisan akademik.</p>
-                            </td>
-                            <td width="50%" class="feature-card" align="center" valign="top" style="border: 1px solid #eee; border-radius: 15px;">
-                                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png" width="50">
-                                <h4>Pelacakan Progres</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Sistem memantau perkembangan belajar siswa secara berkala.</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h3 align="center" style="font-size: 1.5rem; margin-top: 40px; margin-bottom: 20px;">Keunggulan</h3>
-                    <table border="1" width="100%" cellpadding="15" style="border-collapse: collapse; border-color: #eee; text-align: center;">
-                        <tr style="background-color: #f9fafb; font-weight: 600;">
-                            <td>Interaktif & Reflektif</td>
-                            <td>Terstruktur</td>
-                            <td>Berbasis Tantangan</td>
-                            <td>Mandiri</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <footer align="center" style="margin-top: 80px; padding: 40px; border-top: 1px solid #eee;">
-        <p>&copy; 2026 <b>Thinkara</b> — Managed by Gregorius Frederick J.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <strong>Thinkara</strong></p>
+        </div>
     </footer>
 
 </body>

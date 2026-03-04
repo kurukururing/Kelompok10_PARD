@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata | Gregorius Frederick J.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bio-page">
 
     <div class="blob-bg"></div>
 
@@ -15,45 +15,67 @@
         <header class="hero">
             <div class="profile-container">
                 <img src="foto/foto_jeff.jpeg" alt="Profile" class="profile-img">
-                <div class="status-badge">Jeff</div>
+                <div class="status-badge">Available for Work</div>
             </div>
             
             <div class="hero-text">
-                <h1>Gregorius <span class="gradient-text">Frederick Jefferson</span></h1>
+                <h1>Gregorius <span class="gradient-text">Frederick J.</span></h1>
                 <p class="subtitle">Information Systems Student @ UPN "Veteran" Jatim</p>
             </div>
         </header>
 
-        <main class="grid-content">
-            <section class="bio">
+        <main class="bento-grid">
+            <section class="card bio">
                 <h2 class="section-label">Tentang Saya</h2>
-                <p>Halo! Saya seorang developer dan desainer yang fokus pada pembuatan solusi digital yang fungsional. Saat ini saya mendalami <strong>UI/UX Design</strong> dan <strong>Frontend Development</strong> dengan minat khusus pada digitalisasi UMKM dan <em>Smart Village</em>.</p>
+                <p>Developer dan desainer yang fokus pada solusi digital fungsional. Saat ini mendalami <strong>UI/UX Design</strong> dan <strong>MERN Stack</strong> dengan minat khusus pada digitalisasi UMKM.</p>
             </section>
 
-            <section class="details">
-                <h2 class="section-label">Keahlian & Fokus</h2>
-                <div class="tags">
-                    <span class="tag">UI/UX Design</span>
-                    <span class="tag">React.js</span>
-                    <span class="tag">Database Management</span>
-                    <span class="tag">Gamification</span>
+            <section class="card personal-info">
+                <h2 class="section-label">Data Diri</h2>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span>Lahir:</span>
+                        <p>Surabaya, 200X</p>
+                    </div>
+                    <div class="info-item">
+                        <span>Umur:</span>
+                        <p>19 Tahun</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="contact">
-                <h2 class="section-label">Hubungi</h2>
-                <div class="contact-links">
-                    <a href="mailto:gregorius@email.com" class="main-link">Email Me</a>
-                    <div class="socials">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Instagram</a>
-                    </div>
+            <section class="card hobbies">
+                <h2 class="section-label">Hobi & Minat</h2>
+                <div class="hobby-icons">
+                    <div class="hobby">💻 <span>Coding</span></div>
+                    <div class="hobby">🎨 <span>Design</span></div>
+                    <div class="hobby">🎮 <span>Gaming</span></div>
+                    <div class="hobby">📚 <span>Reading</span></div>
+                </div>
+            </section>
+
+            <section class="card skills">
+                <h2 class="section-label">Keahlian</h2>
+                <div class="tags">
+                    <span class="tag">UI/UX Design</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Figma</span>
+                </div>
+            </section>
+
+            <section class="card contact-card">
+                <h2 class="section-label">Hubungi Saya</h2>
+                <a href="mailto:gregorius@email.com" class="main-link">Email Me</a>
+                <div class="socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
                 </div>
             </section>
         </main>
 
         <footer class="mini-footer">
+            <a href="portfolio.html" class="back-link">← Kembali ke Portfolio</a>
             <p>&copy; 2026 Thinkara.</p>
         </footer>
     </div>
