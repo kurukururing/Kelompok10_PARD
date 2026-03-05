@@ -78,6 +78,29 @@
             <p>&copy; 2026 <strong>Thinkara.</strong></p>
         </div>
     </footer>
+<script>
+        document.querySelector('.btn-submit').addEventListener('click', function(e) {
+            const usernameInput = document.getElementById('username');
+            const emailInput = document.getElementById('biodata'); 
+            const passwordInput = document.getElementById('password');
 
+            if (usernameInput.value.trim() === "" || 
+                emailInput.value.trim() === "" || 
+                passwordInput.value.trim() === "") {
+                
+                alert("Ups! Mohon isi semua kolom sebelum update.");
+            } else {
+                alert("Profil berhasil diperbarui!");
+                window.location.href = "index.html";
+            }
+        });
+
+        document.querySelector('.btn-danger').addEventListener('click', function() {
+            if(confirm("Apakah Anda yakin ingin keluar?")) {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
