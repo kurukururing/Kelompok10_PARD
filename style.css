@@ -487,3 +487,49 @@ textarea {
     .hero h1 { font-size: 2.2rem; }
     nav a { display: none; } 
 }
+
+/* User Profil */
+
+.profile-page {
+    --primary-color: #ea580c;
+    --secondary-color: #9a3412;
+    --accent-soft: #ffedd5;
+}
+
+.profile-wrapper {
+    max-width: 500px;
+    margin: 4rem auto;
+}
+
+.profile-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.profile-actions {
+    margin-top: 1.5rem;
+}
+
+.profile-actions button + button {
+    margin-top: 15px;
+}
+
+.btn-danger {
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-danger:hover {
+    background: #7f1d1d;
+}
