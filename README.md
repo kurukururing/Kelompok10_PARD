@@ -1,1 +1,0 @@
-# Kelompok10_PARD

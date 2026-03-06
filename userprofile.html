@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -23,8 +24,25 @@
         </div>
     </header>
 
-    <main>
+    <!-- not logged in -->
+    <div id="not-logged" style="display:none; text-align:center;">
         <div class="container">
+            <div class="profile-wrapper">
+                <div class="card">
+                    <h2 class="profile-title">
+                        Silahkan daftar terlebih dahulu pada
+                        <a href="index.html#login-form">
+                            Login
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- logged in -->
+    <main>
+        <div class="container" id="profile-section">
             <div class="profile-wrapper">
                 <div class="card">
 
@@ -32,41 +50,47 @@
 
                     <div class="profile-current-data">
 
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" value="guest123" disabled>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" id="current-username"disabled>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" id="current-email" disabled>
+                        </div>
+
                     </div>
 
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="text" value="guest12@gmail.com" disabled>
-                    </div>
+                    <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;">
 
-                </div>
+                    <!-- Update -->
 
-                <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;">
+                    <form onsubmit="event.preventDefault()">
 
-                <!-- Update -->
-
-                <div class="form-group">
-                    <label for="username">Ganti Username</label>
-                    <input type="text" id="username" placeholder="Masukkan username baru">
-                </div>
-
-                <div class="form-group">
-                    <label for="biodata">Ganti Email</label>
-                    <input type="text" id="biodata" placeholder="Masukkan email baru">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Ganti Password</label>
-                    <input type="password" id="password" placeholder="Masukkan password baru">
-                </div>
-
-                <div class="profile-actions">
-                    <button class="btn-submit">Update Profile</button>
-                    <button class="btn-danger">Logout</button>
-                </div>
+                        <div class="form-group">
+                            <label for="username">Ganti Username</label>
+                            <input type="text" id="username" placeholder="Masukkan username baru">
+                            <small id="username-error-msg" style="color:red"></small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Ganti Email</label>
+                            <input type="email" id="email" placeholder="Masukkan email baru">
+                            <small id="email-error-msg" style="color:red"></small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Ganti Password</label>
+                            <input type="password" id="password" placeholder="Masukkan password baru">
+                            <small id="password-error-msg" style="color:red"></small>
+                        </div>
+                        
+                        <div class="profile-actions">
+                            <button class="btn-submit" onclick="editData()">Update Profile</button>
+                            <button class="btn-danger" onclick="deleteData()">Logout</button>
+                        </div>
+                    </form>
 
                 </div>
             </div>
@@ -78,16 +102,17 @@
             <p>&copy; 2026 <strong>Thinkara.</strong></p>
         </div>
     </footer>
-<script>
-        document.querySelector('.btn-submit').addEventListener('click', function(e) {
+
+    <!-- <script>
+        document.querySelector('.btn-submit').addEventListener('click', function (e) {
             const usernameInput = document.getElementById('username');
-            const emailInput = document.getElementById('biodata'); 
+            const emailInput = document.getElementById('biodata');
             const passwordInput = document.getElementById('password');
 
-            if (usernameInput.value.trim() === "" || 
-                emailInput.value.trim() === "" || 
+            if (usernameInput.value.trim() === "" ||
+                emailInput.value.trim() === "" ||
                 passwordInput.value.trim() === "") {
-                
+
                 alert("Ups! Mohon isi semua kolom sebelum update.");
             } else {
                 alert("Profil berhasil diperbarui!");
@@ -95,12 +120,15 @@
             }
         });
 
-        document.querySelector('.btn-danger').addEventListener('click', function() {
-            if(confirm("Apakah Anda yakin ingin keluar?")) {
+        document.querySelector('.btn-danger').addEventListener('click', function () {
+            if (confirm("Apakah Anda yakin ingin keluar?")) {
+                localStorage.removeItem("loginStatus");
                 window.location.href = "index.html";
             }
         });
-    </script>
+    </script> -->
+
+    <script src="assets/js/script.js"></script>
 </body>
-</body>
+
 </html>
