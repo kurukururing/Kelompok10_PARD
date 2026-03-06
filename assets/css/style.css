@@ -556,6 +556,13 @@ textarea {
     --primary-color: #ea580c;
     --secondary-color: #9a3412;
     --accent-soft: #ffedd5;
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page main {
+    flex: 1;
 }
 
 .profile-wrapper {
