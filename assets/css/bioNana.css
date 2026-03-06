@@ -1,7 +1,218 @@
-body {
-  background-color: #ffc1c1;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.bio-card {
-  background-color: #565456;
+body {
+    /* font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh; */
+    /* background: #000000; */
+    background-color: #563b21;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../img/nana/img1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('../img/nana/img2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('../img/nana/img3.jpg');
+}
+.card[for="c4"] {
+    background-image: url('../img/nana/img4.png');
+}
+
+/* ---------------------BUTTONS----------------------------------- */
+
+.cssbuttons-io-button {
+  background: #78522e;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #624326;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #78522e;
+}
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* ---------------------ITU----------------------------------- */
+.bottom-bar{
+    position: absolute;
+    bottom: 210px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    pointer-events: none;
+}
+
+.bottom-bar .cssbuttons-io-button{
+    pointer-events: all;
+}
+
+.brand{
+    color: white;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* ---------------------HEADER----------------------------------- */
+.page-header{
+    position: absolute;
+    top: 190px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 900px;
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle{
+    color: #b0b0ba;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
