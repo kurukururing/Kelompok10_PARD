@@ -16,8 +16,8 @@
                 <a href="index.html">Beranda</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" >Kontak</a>
                 <a href="userprofile.html">Profil</a>
-                <a href="contact.html" class="btn-nav">Kontak</a>
             </nav>
         </div>
     </header>
@@ -28,6 +28,41 @@
             <p>Platform pembelajaran reflektif untuk membangun kemandirian berpikir di era instan.</p>
         </div>
     </section>
+            <!-- not logged in -->
+            <section id="login-form" class="form-section card">
+            <div class="card-header">
+                <h2>Mulai Perjalanan Anda</h2>
+                <p>Siap untuk melatih kemampuan berpikir Anda hari ini?</p>
+            </div>
+            
+            <form onsubmit="return loginUser(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan username Anda">
+                    <small id="username-error-msg" class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="alamat@email.com">
+                    <small id="email-error-msg" class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password Anda">
+                    <small id="password-error-msg" class="error-text"></small>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submit-data">Daftar Sekarang</button>
+            </form>
+        </section>
+
+        <section class="form-section card success-card" id="login-success" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h2 class="section-title">Selamat Datang Kembali!</h2>
+            <p>Anda telah berhasil masuk ke akun Anda.</p>
+        </section>
 
     <main class="container">
         <section id="tentang" class="card">
@@ -83,39 +118,6 @@
                     </tbody>
                 </table>
             </div>
-        </section>
-
-        <!-- not logged in -->
-        <section id="login-form" class="form-section card">
-            <h2>Mulai Perjalanan Anda</h2>
-            <p>Siap untuk melatih kemampuan berpikir Anda hari ini?</p>
-            <form onsubmit="return loginUser(event)">
-                <div class="form-group">
-                    <label for="nama">Username</label>
-                    <input type="text" id="username" placeholder="Masukkan username Anda"
-                          aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                          <small id="username-error-msg" style="color: red;"></small>
-                    <!-- <input type="text" id="nama" placeholder="Masukkan nama Anda"> -->
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="alamat@email.com"
-                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                          <small id="email-error-msg" style="color: red;"></small>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Masukkan password Anda"
-                           aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                           <small id="password-error-msg" style="color: red;"></small>
-                </div>
-                <button type="submit" class="btn-submit" id="submit data">Daftar Sekarang</button>
-            </form>
-        </section>
-
-        <!-- logged in -->
-        <section class="form-section card" id="login-success" style="display:none;">
-                <h2 class="section-title">Anda berhasil Login !</h2>
         </section>
     </main>
 
